@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Piano_istrument</class>
+ <widget class="QWidget" name="Piano_istrument">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1245</width>
+    <height>881</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Piano_Button_1,#Piano_Button_2,#Piano_Button_3,#Piano_Button_4,#Piano_Button_5,#Piano_Button_6,#Piano_Button_7
+{
+background-color: rgb(250, 250, 250);
+}
+#Piano_Button_1:hover,#Piano_Button_2:hover,#Piano_Button_3:hover,#Piano_Button_4:hover,#Piano_Button_5:hover,#Piano_Button_6:hover,#Piano_Button_7:hover
+{
+background-color: rgb(240, 240, 250);
+}
+
+#Piano_Button_1:pushed,#Piano_Button_2:pushed,#Piano_Button_3:pushed,#Piano_Button_4:pushed,#Piano_Button_5:pushed,#Piano_Button_6:pushed,#Piano_Button_7:pushed
+{
+background-color: rgb(255, 255, 0)
+}
+
+#Piano_Button_above_1,#Piano_Button_above_2,#Piano_Button_above_3,#Piano_Button_above_4,#Piano_Button_above_5
+{
+background-color: rgb(100, 100, 100);
+}
+
+#Piano_Button_above_1:hover,#Piano_Button_above_2:hover,#Piano_Button_above_3:hover,#Piano_Button_above_4:hover,#Piano_Button_above_5:hover,DrumbButton:hover
+{
+background-color: rgb(75, 75, 75);
+}
+#Piano_Button_above_1:pushed,#Piano_Button_above_2:pushed,#Piano_Button_above_3:pushed,#Piano_Button_above_4:pushed,#Piano_Button_above_5:pushed,DrumbButton:pushed
+{
+background-color: rgb(50, 50, 50);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidgets">
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;musicTab&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="musicTab">
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <attribute name="title">
+       <string>musicTab</string>
+      </attribute>
+      <widget class="QFrame" name="frameForPiano">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>371</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="backGroundForPiano">
+          <property name="styleSheet">
+           <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(148, 118, 254, 255), stop:1 rgba(71, 255, 243, 255))</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <widget class="QLabel" name="backGroundForSubPiano">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>351</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(40, 40, 40);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_above_4">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>40</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_6">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_above_5">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>30</y>
+          <width>40</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_4">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_7">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_above_1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>40</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_above_3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>30</y>
+          <width>40</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_5">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>50</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Piano_Button_above_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>30</y>
+          <width>40</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>backGroundForPiano</zorder>
+       <zorder>Piano_Button_6</zorder>
+       <zorder>Piano_Button_4</zorder>
+       <zorder>Piano_Button_7</zorder>
+       <zorder>Piano_Button_1</zorder>
+       <zorder>Piano_Button_2</zorder>
+       <zorder>Piano_Button_3</zorder>
+       <zorder>Piano_Button_5</zorder>
+       <zorder>Piano_Button_above_4</zorder>
+       <zorder>Piano_Button_above_5</zorder>
+       <zorder>Piano_Button_above_1</zorder>
+       <zorder>Piano_Button_above_2</zorder>
+       <zorder>Piano_Button_above_3</zorder>
+       <zorder>backGroundForSubPiano</zorder>
+      </widget>
+      <widget class="QWidget" name="Guitar_widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>300</y>
+         <width>951</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="Guitar_Picture">
+          <property name="styleSheet">
+           <string notr="true">image: url(:/newPrefix/Guitar.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <widget class="QPushButton" name="Guitar_button_4">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>280</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Guitar_button_1">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>250</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Guitar_button_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>260</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Guitar_button_3">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>270</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Guitar_button_5">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>290</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>Guitar_Picture</zorder>
+       <zorder>Guitar_button_5</zorder>
+       <zorder>Guitar_button_4</zorder>
+       <zorder>Guitar_button_1</zorder>
+       <zorder>Guitar_button_2</zorder>
+       <zorder>Guitar_button_3</zorder>
+      </widget>
+      <widget class="QPushButton" name="DrumbButton">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>110</y>
+         <width>111</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#DrumbButton {
+	
+color: #333;
+border: 2px solid #555;
+border-radius: 50px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+#DrumbButton:hover {
+background:qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}
+
+#DrumbButton:pushed
+{
+background:qradialgradient(
+cx: 0.8, cy: -0.9, fx: 0.3, fy: -0.5,
+radius: 1.5, stop: 1 #000, stop: 2 #aaa
+);
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_for_tunes">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>250</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>octave</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>solo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>spare</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_for_drumb_picture">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>80</y>
+         <width>251</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/newPrefix/drumb.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_for_drumb_picture</zorder>
+      <zorder>DrumbButton</zorder>
+      <zorder>frameForPiano</zorder>
+      <zorder>Guitar_widget</zorder>
+      <zorder>comboBox_for_tunes</zorder>
+     </widget>
+     <widget class="QWidget" name="equilizerTab">
+      <attribute name="title">
+       <string>equilizerTab</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_For_spectrogram">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <spacer name="horizontalSpacer_For_signal">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <layout class="QVBoxLayout" name="verticalLayout_For_spectrogram"/>
+       </item>
+       <item row="0" column="3">
+        <spacer name="verticalSpacer_for_singal_and_spectrogram">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>178</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <layout class="QVBoxLayout" name="verticalLayout_For_signal"/>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_For_Feautures">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_For_Buttons">
+           <item>
+            <widget class="QPushButton" name="pushButton_Open">
+             <property name="text">
+              <string>Open</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_Play_Pause">
+             <property name="text">
+              <string>Play/Pause</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Apply_3">
+             <property name="text">
+              <string>Apply</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item alignment="Qt::AlignVCenter">
+          <widget class="QSlider" name="verticalSlider_For_volume">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>150</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>10</number>
+           </property>
+           <property name="sliderPosition">
+            <number>10</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_For_equilizing">
+           <item>
+            <widget class="QWidget" name="widget_For_pictures" native="true">
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <widget class="QLabel" name="Guitar_Picture_4">
+                <property name="styleSheet">
+                 <string notr="true">
+image: url(:/newPrefix/piano2.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="Guitar_Picture_2">
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/newPrefix/Guitar.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="Guitar_Picture_5">
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/newPrefix/drumb.png);
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_For_equillizing">
+             <item>
+              <widget class="QSlider" name="horizontalSlider_For_piano">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_For_Guitar">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_For_Drumb">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="3">
+        <spacer name="verticalSpacer_for_allSettings">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>135</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="sourceGuitar.qrc"/>
+ </resources>
+ <connections/>
+</ui>
